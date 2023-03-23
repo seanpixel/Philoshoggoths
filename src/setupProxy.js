@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:3001',
+      target: 'https://radiant-basin-02631.herokuapp.com', // Replace this with your Heroku app URL
       changeOrigin: true,
     })
   );
